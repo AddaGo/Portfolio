@@ -1,0 +1,353 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* HOME PAGE */
+h2{
+    float: center;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: #eeeeee;
+}
+
+h3{
+    float: center;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #eeeeee;
+    opacity: 0.4;
+    margin:0;
+}
+
+body{
+    float: center;
+    background-color: #171717;
+    margin: 0;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
+
+.topnav{
+    background-color: #171717;
+    padding: 10px;
+}
+
+.topnav a.btn0{
+    float: left;
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #d20b2d;
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+
+.topnav a.btn{
+    float: right;
+    padding: 20px 15px;
+    color: #eeeeee;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.image-header{
+    display: flex;
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+}
+
+.image-header img{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding:0;
+}
+
+.desc{
+    text-align: center;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
+p{
+    color: #eeeeee;
+    width: 50%;
+    display:inline-block;
+}
+
+.project-item{
+    text-align:center;
+    padding:20px;
+}
+
+a.cat{
+    vertical-align:middle;
+    background:#d20b2d;
+    padding: 15px;
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.timeline img{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.education{
+    text-align: center;
+    float: center;
+    padding:5px;
+}
+
+.education p{
+    color: #d20b2d;
+    font-size:25px;
+    font-weight: 700;
+    width: 50%;
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+.education p1{
+    color: #eeeeee;
+    width: 50%;
+    display:inline-block;
+}
+
+.portfolio-grid{
+    justify-content: center;
+    align-content: center;
+    padding: 0 80px;
+    display: grid; 
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto auto auto; 
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    min-height: 0;
+    min-width: 0; 
+}
+
+.itemtext{
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.itemimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.itemtext .itemtext_title{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 30px;
+    color: #eeeeee;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.itemtext .itemtext_desc{
+    position: relative;
+    padding: 30px 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    color: #eeeeee;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.itemtext a.cat1{
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #d20b2d;
+    color: #eeeeee;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.contact{
+    margin-bottom: 230px;
+}
+.contact a.cat2{
+    position: relative;
+    top: 60px;
+    left: 120px;
+    margin-left: 100px;
+    background:#d20b2d;
+    padding: 15px;
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline;
+    border-radius: 10px;
+}
+
+/* ABOUT PAGE */
+.about-image-header{
+    padding:0;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.about-image-header img{
+    position: relative;
+    max-width: 100%;
+    padding:40px 0px;
+}
+
+.white{
+    display: inline;
+    margin-left:20px;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: #eeeeee;
+}
+
+.title{
+    float: center;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: #d20b2d;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #d20b2d;
+}
+
+.gallery {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.gallery img{
+    display: inline;
+}
+
+.showcase{
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+}
+
+.showcase img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    padding:20px 60px;
+}
+
+.project-header{
+    padding:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.project-header img{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.project-grid{
+    margin-top: 50px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 40vw); 
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+}
+
+.pic{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-grid1{
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 40vw; 
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+}
+
+.pic1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter:blur(5px);
+    transition: all .1s ease-in-out;
+}
+
+.pic1:hover{
+    filter: blur(0);
+}
+
+
