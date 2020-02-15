@@ -88,7 +88,7 @@ p{
 .image-header{
     display: flex;
     position: relative;
-    height: 1200px;
+    height: auto;
     width: 100%;
     overflow: hidden;
     padding:0;
