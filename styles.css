@@ -99,7 +99,7 @@ p{
 }
 
 .image-header img{
-    /*position: relative;*/
+    position: relative;
     max-width: 100%;
     /*overflow: hidden;*/
     padding:0;
