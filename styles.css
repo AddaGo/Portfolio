@@ -86,6 +86,7 @@ p{
 
 /* INDEX */
 .image-header{
+    display: -webkit-box;
     display: flex;
     position: relative;
     height: auto;
@@ -146,7 +147,8 @@ a.cat{
 }
 
 .portfolio-grid{
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     align-content: center;
     padding: 0 80px;
     display: grid; 
@@ -166,13 +168,15 @@ a.cat{
 .itemimg{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 
 .itemtext .itemtext_title{
     position: relative;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     align-content: center;
     text-align: center;
     font-family: Lato, sans-serif;
@@ -188,7 +192,8 @@ a.cat{
 .itemtext .itemtext_desc{
     position: relative;
     padding: 30px 20px;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     align-content: center;
     text-align: center;
     font-family: Lato, sans-serif;
@@ -307,7 +312,8 @@ a.cat{
 
 .project-grid{
     margin-top: 50px;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     align-content: center;
     display: grid;
     grid-template-columns: auto auto;
@@ -320,13 +326,15 @@ a.cat{
 
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* WORK */
 .project-grid1{
     margin-top: 2vw;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     align-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12vw, 1fr));
@@ -338,13 +346,17 @@ a.cat{
 .pic1{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter:blur(5px);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter:blur(5px);
+            filter:blur(5px);
+    -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
 
 .pic1:hover{
-    filter: blur(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
 }
 
 
