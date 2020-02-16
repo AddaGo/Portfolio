@@ -103,18 +103,18 @@ p{
 
 .project-item{
     text-align:center;
-    padding:20px;
+    padding:1.5vw;
 }
 
 a.cat{
     vertical-align:middle;
     background:#d20b2d;
-    padding: 15px;
+    padding: 1.5vw;
     color: #eeeeee;
     text-decoration: none;
     font-weight: 700;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 1.3vw;
 }
 
 .timeline img{
@@ -251,24 +251,14 @@ a.cat{
     padding:40px 0px;
 }
 
-/*.white{
-    display: inline;
-    margin-left:20px;
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-size: 70px;
-    font-weight: 900;
-    color: #eeeeee;
-}*/
-
-/*.title{
+.title{
     float: center;
     text-align: center;
     font-family: Lato, sans-serif;
-    font-size: 70px;
+    font-size: 3.5vw;
     font-weight: 900;
     color: #d20b2d;
-}*/
+}
 
 /*useless cuz change blog showcase*/
 .gallery {
@@ -335,14 +325,14 @@ a.cat{
 
 /* WORK */
 .project-grid1{
-    margin-top: 20px;
+    margin-top: 2vw;
     justify-content: center;
     align-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12vw, 1fr));
     grid-template-rows: 40vw; 
     grid-column-gap: 0px;
-    grid-row-gap: 50px;
+    grid-row-gap: 2.5vw;
 }
 
 .pic1{
