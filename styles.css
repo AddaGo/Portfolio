@@ -89,19 +89,19 @@ p{
 
 /* INDEX */
 .image-header{
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: flex;
-    position: relative;
+    position: relative;*/
     height: auto;
     width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding:0;
 }
 
 .image-header img{
-    position: relative;
+    /*position: relative;*/
     max-width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding:0;
 }
 
