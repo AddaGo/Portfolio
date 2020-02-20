@@ -248,11 +248,16 @@ a.cat{
 }
 
 .contact{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    position: relative;
+    padding-top: 5vw;
     margin-bottom: 11.5vw;
 }
 .contact a.cat2{
     position: relative;
-    padding: 1.2vw;
+    padding: 1.2vw 3vw;
     display: inline-block;
     border-radius: 1vw;
 }
