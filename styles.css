@@ -525,7 +525,7 @@ a.cat{
     align-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12vw, 1fr));
-    grid-template-rows: 40vw; 
+    grid-template-rows: 90vh; 
     grid-column-gap: 0px;
     grid-row-gap: 2.5vw;
 }
