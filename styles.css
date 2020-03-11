@@ -194,36 +194,22 @@ a.cat{
     grid-row-gap: 4vw;
     min-height: 0;
     min-width: 0; 
-    /*transition: all .2s ease-in-out;*/
+
 }
-/*
-.portfolio-grid .row:hover{
-    transform: scale(1.1);
-}
-*/
 
 .itemtext{
     overflow: hidden;
     background-color: #111111;
-    /*transition: all .2s ease-in-out;*/
 }
-/*
-.itemtext:hover{
-    transform: scale(1.1);
-}
-*/
+
 .itemimg{
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-       /*transition: all .2s ease-in-out;*/
+
 }
-/*
-.itemimg:hover{
-    transform: scale(1.1);
-}
-*/
+
 .itemtext .itemtext_title{
     position: relative;
     -webkit-box-pack: center;
@@ -238,12 +224,8 @@ a.cat{
     width: 100%;
     height: 100%;
     margin: auto;
-    transition: all .2s ease-in-out;
 }
 
-.itemtext .itemtext_title:hover{
-    transform: scale(1.1);
-}
 
 .itemtext .itemtext_desc{
     position: relative;
