@@ -147,6 +147,7 @@ hr{
 }
 
 a.cat{
+    text-align: center;
     vertical-align:middle;
     background:#d20b2d;
     padding: 1.5vw;
