@@ -562,8 +562,8 @@ a.cat{
 }
 
 .grid-card-image{
-    width: 395px;
-    height: 239px;
+    width: 14em;
+    height: 8em;
     object-fit: cover;
 }
 
@@ -612,25 +612,6 @@ a.cat{
     margin-top: 5px;
 }
 
-/*
-.cinema-grid{
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr); 
-    grid-column-gap: 2vw;
-    grid-row-gap: 4vw;
-    min-height: 0;
-    min-width: 0;
-}
-
-.cinema-grid > img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}*/
-
 .cinema-grid {
     display: flex;
     flex-wrap: wrap;
@@ -643,5 +624,5 @@ a.cat{
 
 .cinema-grid img {
     margin: 10px;
-    max-width: 30vw;
+    max-width: 25vw;
 }
