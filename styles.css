@@ -504,35 +504,60 @@ a.cat{
 
 /* WORK */
 .project-grid1{
-    margin-top: 2vw;
+    margin-top: 10vh;
     -webkit-box-pack: center;
             justify-content: center;
     align-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12vw, 1fr));
-    grid-template-rows: 90vh; 
+    grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+    grid-template-rows: 70vh; 
     grid-column-gap: 0px;
     grid-row-gap: 2.5vw;
 }
 
-.pic1{
+.textWithBlurredBg{
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+}
+
+.textWithBlurredBg .pic1{
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-filter:blur(5px);
-            filter:blur(5px);
+    -webkit-filter: blur(0);
+       filter: blur(0);
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
 
-.pic1:hover{
-    -webkit-filter: blur(0);
-            filter: blur(0);
+.textWithBlurredBg:hover .pic1{
+    filter:blur(5px) brightness(60%);
+}
+
+.textWithBlurredBg .overlay{
+    font-family: Lato, sans-serif;
+    font-size: 1.5vw; 
+    font-weight: 600;
+    position:absolute;
+    z-index:1;
+    top:50%;
+    margin: 0 30;
+    text-align:center;
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    text-shadow: 2px 2px 4px #171717;
+}
+
+.textWithBlurredBg:hover .overlay{
+    opacity:1;
 }
 
 
-/* ABOUT GIRD */
+/* ABOUT GRID */
 .grid-card-wraper{
     position: relative;
     padding-left: 4%;
