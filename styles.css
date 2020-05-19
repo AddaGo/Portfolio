@@ -91,11 +91,11 @@ p{
     font-size: 1.5vw;
     font-weight: 100;
     opacity: 0.7;
-    display: table;
     float: left;
     text-align: justify;
     padding-bottom: 4vw;
     padding-top: 0.5vw;
+
 }
 
 .subtitle{
@@ -208,14 +208,14 @@ a.cat{
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 
 }
 
 .itemtext .itemtext_title{
     position: relative;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     align-content: center;
     text-align: center;
     font-family: Lato, sans-serif;
@@ -233,7 +233,7 @@ a.cat{
     position: relative;
     padding: 2vw 4vw;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     align-content: center;
     text-align: center;
     font-family: Lato, sans-serif;
@@ -610,4 +610,22 @@ a.cat{
 
     margin-bottom: 0;
     margin-top: 5px;
+}
+
+.cinema-grid{
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    grid-column-gap: 2vw;
+    grid-row-gap: 4vw;
+    min-height: 0;
+    min-width: 0;
+}
+
+.cinema-grid > img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
