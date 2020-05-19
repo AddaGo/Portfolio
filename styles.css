@@ -637,9 +637,11 @@ a.cat{
     align-items: flex-start;
     flex-direction: row;
     max-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .cinema-grid img {
-    margin: 20px;
-    max-width: 32vw;
+    margin: 10px;
+    max-width: 30vw;
 }
