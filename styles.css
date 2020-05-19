@@ -612,6 +612,7 @@ a.cat{
     margin-top: 5px;
 }
 
+/*
 .cinema-grid{
     align-content: center;
     display: grid;
@@ -628,4 +629,17 @@ a.cat{
     height: auto;
     object-fit: cover;
     display: block;
+}*/
+
+.cinema-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+}
+
+.cinema-grid img {
+    margin: 20px;
+    max-width: 32vw;
 }
