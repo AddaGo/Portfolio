@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            #loading {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+
+                overflow: hidden;
+                visibility: visible;
+            }
+
+            #content {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                
+                overflow: hidden;
+                visibility: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="loading">
+            <h1>stupid loading screen</h1>
+        </div>
+
+        <div id="content">
+            <h1>this is the actual content</h1>
+
+            <div id="home-image-wrap">
+                <img id="home-image" />
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        var images = [
+            {
+                id: "home-image",
+                path: "images/home.jpeg"
+            }
+        ];
+
+        function loadImages(){
+            for(let i=0; i<images.length; ++i) {
+                document.getElementById(images[i].id).src = images[i].path;
+            }
+
+            document.getElementById("content").style.visibility = "visible";
+            document.getElementById("loading").style.visibility = "hidden";
+        }
+
+        window.onload = function(){
+            loadImages();
+        };
+    </script>
+</html>
