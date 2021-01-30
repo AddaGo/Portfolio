@@ -230,14 +230,15 @@ a.cat{
 
 
 .itemtext .itemtext_desc{
+    display: inline;
     position: relative;
-    padding: 2vw 4vw;
+    /*padding: 2vw 4vw;*/
     -webkit-box-pack: center;
     justify-content: center;
     align-content: center;
     text-align: center;
     font-family: Lato, sans-serif;
-    font-size: 1.2vw;
+    font-weight: 400;
     color: #eeeeee;
     overflow: hidden;
     width: 100%;
