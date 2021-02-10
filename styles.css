@@ -1,6 +1,7 @@
 /* GENERAL */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
@@ -45,30 +46,47 @@ body{
 
 
 .topnav{
+    width: 80%;
+    margin: 0.6vw auto;
+    display:flex;
     background-color: #171717;
-    padding: 1vw;
+    justify-content: center;
 }
 
-.topnav a.btn0{
-    float: left;
-    font-family: Lato, sans-serif;
-    font-size: 3vw;
-    font-weight: 900;
-    color: #d20b2d;
-    text-decoration: none;
-    padding:0.5vw 1.2vw;
-
-}
-
-.topnav a.btn{
-    float: right;
-    padding: 1.2vw 1.2vw;
+.btn0{
+    margin: 1vw 3vw;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
     color: #eeeeee;
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-size: 1.7vw;
-    font-weight: bold;
     text-decoration: none;
+    padding:8px 8px;
+}
+
+.topnav .btn{
+    margin: 1vw 3vw;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color:#eeeeee;
+    text-decoration: none;
+    padding:8px 8px;
+}
+
+.topnav .btnright{
+    margin-left: 3vw;
+    align-self:center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color:#eeeeee;
+    text-decoration: none;
+    padding:1% 1%;
+    border-style:solid;
+    border-width:1.5px;
+    border-color:#eeeeee;
+    border-radius:0.7vw;
 }
 
 .desc{
@@ -184,97 +202,92 @@ a.cat{
     padding-top: 1vh;
 }
 
-.portfolio-grid{
-    -webkit-box-pack: center;
-            justify-content: center;
-    align-content: center;
-    padding: 0 80px;
-    display: grid; 
-    grid-template-columns: auto auto; 
-    grid-template-rows: auto auto auto auto; 
-    grid-column-gap: 0px;
-    grid-row-gap: 4vw;
+.portfolio-flex{
+    padding: 6vh 6vw;
+    display: flex;
+    width:100%;
+    height:auto;
     min-height: 0;
     min-width: 0; 
-
 }
 
 .itemtext{
-    overflow: hidden;
-    background-color: #111111;
+    flex-grow: 1;
+    background-color: #171717;
+    /*flex-basis: 100%;*/
+    width:100%;
+    height:auto;
+    flex-wrap: column;
 }
 
 .itemimg{
-    width: 100%;
+    flex-grow:2;
+    width:100%;
+    /*width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    */
+}
 
+.itemimg img{
+    width: 100%;
+    height: auto;
 }
 
 .itemtext .itemtext_title{
-    position: relative;
-    -webkit-box-pack: center;
-    justify-content: center;
+    
     align-content: center;
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-size: 4vw;
-    font-weight: 900;
+    vertical-align: middle;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
     padding-top: 4vw;
+    padding-left: 4.5vw;
     color: #eeeeee;
     width: 100%;
-    height: 100%;
-    margin: auto;
+    height: auto;
 }
 
 
 .itemtext .itemtext_desc{
     position: relative;
-    padding: 2vw 4vw;
-    -webkit-box-pack: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-size: 1.2vw;
+    line-height: 1.5vw;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    padding-top: 4.5vw;
     color: #eeeeee;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    margin: auto;
+    width: 80%;
+    height: auto;
 }
 
-.itemtext a.cat1{
+.itemtext .typebtn{
+    display: block;
+    text-align: right;
     position: relative;
-    left: 50%;
-    margin-left: -3vw;
-    padding: 1.2vw;
-    text-align: center;
     text-decoration: none;
-    font-family: Lato, sans-serif;
+    font-weight: 500;
     font-size: 1.2vw;
-    font-weight: 900;
-    background-color: #d20b2d;
-    color: #eeeeee;
-    display: inline-block;
-    border-radius: 0.5vw;
-    margin-bottom: 2vw;
+    padding-top: 8vw;
+    padding-right: 6vw;
+    color: #EC1136;
 }
 
 .contact{
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
+    display:flex;
+    margin:auto;
+    width:80%;
     position: relative;
-    padding-top: 5vw;
-    margin-bottom: 11.5vw;
+    padding: 8vw 6vw;
+    margin-bottom: 5vw;
+    justify-content: space-between;
 }
 .contact a.cat2{
+    display:inline-block;
     position: relative;
-    padding: 1.2vw 3vw;
-    display: inline-block;
-    border-radius: 1vw;
 }
 
 /* ABOUT PAGE */
@@ -503,30 +516,57 @@ a.cat{
 }
 
 /* WORK */
-.project-grid1{
+.project-flex{
+    display:flex;
+    width: 95%;
+    align-content: center;
+    margin: 1vw auto;
+}
+/*.project-grid1{
     margin-top: 10vh;
     -webkit-box-pack: center;
             justify-content: center;
     align-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
-    grid-template-rows: 70vh; 
+    grid-template-rows: 70vh 70vh; 
     grid-column-gap: 0px;
     grid-row-gap: 2.5vw;
-}
+}*/
 
 .textWithBlurredBg{
+    flex-grow:1;
+    width:50%;
     height:auto;
     display:inline-block;
     position:relative;
     transition:.3s;
 }
 
+.textWithBlurredBg .ttl{
+    color: #bdd7e9;
+    font-family: Lato, sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.textWithBlurredBg .descr{
+    color:#eeeeee;
+    font-family: Lato, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.7vw;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
 .textWithBlurredBg .pic1{
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
     -webkit-filter: blur(0);
        filter: blur(0);
     -webkit-transition: all .1s ease-in-out;
@@ -540,11 +580,12 @@ a.cat{
 .textWithBlurredBg .overlay{
     font-family: Lato, sans-serif;
     font-size: 1.5vw; 
-    font-weight: 600;
+    font-weight: 700;
     position:absolute;
+    text-align:center;
     z-index:1;
     top:50%;
-    margin: 0 30;
+    margin:auto;
     text-align:center;
     color:#fff;
     opacity:0;
