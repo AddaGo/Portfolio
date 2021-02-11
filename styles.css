@@ -278,14 +278,22 @@ a.cat{
 
 .contact{
     display:flex;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
     margin:auto;
     width:80%;
     position: relative;
     padding: 8vw 6vw;
     margin-bottom: 5vw;
     justify-content: space-between;
+        -webkit-justify-content: space-between;
 }
 .contact a.cat2{
+    flex: 0 0 40%
     display:inline-block;
     position: relative;
 }
@@ -518,6 +526,12 @@ a.cat{
 /* WORK */
 .project-flex{
     display:flex;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     width: 95%;
     align-content: center;
     margin: 1vw auto;
@@ -566,7 +580,7 @@ a.cat{
 
 .textWithBlurredBg .pic1{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     -webkit-filter: blur(0);
        filter: blur(0);
     -webkit-transition: all .1s ease-in-out;
