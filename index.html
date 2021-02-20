@@ -2,11 +2,13 @@
     <head>
 
         <meta name="google-site-verification" content="I7JC2D8rJwtn5EJrnFMDgt9bQjY9-78Z2t3nF6mbBVY" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> AddaGo - User Experience Designer </title>
 
         <title> AddaGo - User Experience Designer Portfolio </title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="hover.css">
         
@@ -24,35 +26,37 @@
     </header>
 
     <body>
-        <div class="image-header">
-            <img src="images/home.jpeg" alt="AddaGo">
+        <!--HEADER-->
+        <div class="portfolio-flex" style="background-image: url(images/header.jpg); background-size:100% 100%; background-size: contain;">
+            <div class="itemtext" style="align-self: center;">
+                <div class="itemtext_title" style="font-family:Lato; font-size:4vw;"> User Experience Designer
+                    <div class="itemtext_desc" style="font-size:2.3vw; line-height:3vw;"> I listen to user needs and design digital products specifically aimed at solving them. </div>
+                    <div class="typebtn hvr-bob" style="font-size: 1.4vw;"> Scroll down &#129043; </div>
+                </div>
+            </div>
+            <div class="itemimgheader" style="display:inline;">
+                <img src="images/home4.png" class="img-top" alt="Card Back"> 
+                <img src="images/home2.png" alt="home header" style="border-radius: 1vw; max-width:100%;">
+            </div>
         </div>
 
-        <!--INTRODUCTION-->
-        <section class="project-item">
-            <h2 class="hvr-rotate">DESIGNER OF EXPERIENCES</h2>
-            <br> <br>
+        <!--HIRE ME-->
+        <div class="hire-me">
+            <div class="backtext"> Let's work together </div>
+            <div class="desc" style="z-index: 99; position: relative;"> I'm looking to join a team or company that needs a creative problem solver to help design user oriented digital products. </div>
+            <a href="images/Resume.pdf" target="_blank" class="desc hvr-bob" style="padding-top:5vw; font-weight:400; font-size:2vw; text-decoration: none; text-align:right;"> <span class="material-icons-round" style="font-size: 2.3vw; vertical-align: middle; margin-top:-0.5vw;"> design_services </span> &nbsp; See my professional skills </a>
+            <a href="mailto: addagodesign@gmail.com" class="desc hvr-bob" style="padding-top:1vw; font-weight:400; font-size:2vw; text-decoration: none; text-align:right;"> <span class="material-icons-round" style="font-size: 2.3vw; vertical-align: middle; margin-top:-0.5vw;"> alternate_email </span> &nbsp; Let's discuss </a>
+        </div>
 
-            <div class="desc">
-                I am a passionate designer who is ready to fulfill your needs if you are a client or team up in creating something extraordinary if you are a fellow designer or creator. I am also a human who wants to meet you over a coffee and be friends.
-            </div>
-            <br>
-            <br>
-            <a class="cat hvr-bob" href="about.html"> THIS IS ME! </a>
-            <br>
-        </section>
-
-        <!--TIMELINE-->
-        <br>
-        <section class="project-item">
-            <h2>MY LIFE SO FAR...</h2>
-            <div class="timeline">
-                <img src="images/timeline.jpg" alt="timeline">
-            </div>
-        </section>
+        <!--CLIENTS-->
+        <!-- <h1> Clients that I worked with </h1>
+        <div class="clients">
+            <div class="clients-cell"> <img src="images/clienthallmark.png" alt="hallmarkcell"> </div>
+            <div class="clients-cell"> <img src="images/comingsoon.png" alt="comingsoon"> </div>
+        </div> -->
 
         <!--EDUCATION-->
-        <section class="project-item">
+        <!-- <section class="project-item">
             <h2>EDUCATION</h2>
             <br>
             <h3>2015 - 2019</h3>
@@ -70,18 +74,27 @@
                 <br>
                 <p1> CMD User Experience Design </p1>
             </div>
+        </section> -->
+
+        <!-- TODO -->
+        <section class="project-item">
+            <!-- <h1> My goals </h1> -->
+            <div class="timeline">
+                <img src="images/todo.png" alt="timeline">
+            </div>
         </section>
 
-
         <!-- PORTFOLIO -->
-        <h2>MY WORK</h2>
+        <section class="project-item">
+            <div class="backtext">MY WORK</div>
         <br>
-        <div class="portfolio-flex">
+        <div class="portfolio-flex" style="z-index: 99; position: relative;">
             <div class="itemimg"> 
                 <img src="images/hallmark1.png" alt="hallmark project">
             </div>
             <div class="itemtext">
                 <div class="itemtext_title"> Prototyping for Hallmark
+                    <div class="itemtext_details"> 2019-2020 </div>
                     <div class="itemtext_desc"> Taking on the challenge from our client Hallmark and delivering a fully prototyped product meant to help people gift each other over distance. </div>
                     <a class="typebtn hvr-bob" href="hallmark.html"> See full design >> </a>
                 </div>
@@ -91,6 +104,7 @@
         <div class="portfolio-flex">
             <div class="itemtext">
                 <div class="itemtext_title"> BMW website UI
+                    <div class="itemtext_details"> 2018-2019 </div>
                     <div class="itemtext_desc"> From my passion for cars and the one for design, this concept was created, giving a more experimental look to the BMW website. </div>
                     <a class="typebtn hvr-bob" href="bmwui.html"> See full design >> </a>
                 </div>
@@ -106,6 +120,7 @@
             </div>
             <div class="itemtext">
                 <div class="itemtext_title"> User trialing Rijksmuseum
+                    <div class="itemtext_details"> 2019-2020 </div>
                     <div class="itemtext_desc"> A deep research on multiple user categories to establish the possible usability issues of the Rijksmuseum website. </div>
                     <a class="typebtn hvr-bob" href="rijks.html"> See full design >> </a>
                 </div>
@@ -115,6 +130,7 @@
         <div class="portfolio-flex">
             <div class="itemtext">
                 <div class="itemtext_title"> Cinema platform
+                    <div class="itemtext_details"> 2019-2020 </div>
                     <div class="itemtext_desc"> Digital cinema platform concept meant to innovate the answer to the "what to watch today" question of the young user. </div>
                     <a class="typebtn hvr-bob" href="cinema.html"> See full design >> </a>
                 </div>
@@ -123,19 +139,18 @@
                 <img src="images/cinema.png" alt="cinema platform">
             </div>
         </div>
+        </section>
 
         <!--CONTACT-->
-        <br>
-        <br>
-        <br>
+        <br> <br>
         <h2>LET'S DESIGN SOMETHING AMAZING TOGETHER!</h2>
-        <div class="contact">
-            <a id="contact" href="mailto: addagodesign@gmail.com" class="cat2 hvr-grow-rotate"> <img src="images/mail.png"> </a>
+        <div class="contact" id="contact">
+            <a href="mailto: addagodesign@gmail.com" class="cat2 hvr-grow-rotate"> <img src="images/mail.png"> </a>
             <a target="_blank" class="cat2 hvr-grow-rotate" href="https://www.instagram.com/adda.go/"> <img src="images/instagram.png"> </a>
             <a target="_blank" class="cat2 hvr-grow-rotate" href="https://www.linkedin.com/in/adinagojnea/"> <img src="images/linkedin.png"> </a>
             <a target="_blank" class="cat2 hvr-grow-rotate" href="https://www.behance.net/addago"> <img src="images/behance.png"> </a>
             <a target="_blank" class="cat2 hvr-grow-rotate" href="https://dribbble.com/AddaGo"> <img src="images/dribbble.png"> </a>
-            <a target="_blank" class="cat2 hvr-grow-rotate" href="https://medium.com/@addago"> <img src="images/medium.png"> </a>
+            <a target="_blank" class="cat2 hvr-grow-rotate" href="https://medium.com/@teenagerinro"> <img src="images/medium.png"> </a>
         </div>
     </body>
 </html>
