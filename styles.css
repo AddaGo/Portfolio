@@ -182,16 +182,15 @@ a.desc:hover{
 }
 
 p{
-    color: #eeeeee;
+    color: #171717;
     line-height: 1.2;
-    font-family: Lato, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.5vw;
-    font-weight: 100;
+    font-weight: 400;
     opacity: 0.7;
     float: left;
     text-align: justify;
     padding-bottom: 4vw;
-    padding-top: 0.5vw;
 
 }
 
@@ -201,14 +200,14 @@ p{
     font-size: 3vw;
     font-weight: 700;
     color: #d20b2d;
-    padding-bottom: 4vw;
+    padding: 3vw 0;
     clear: both;
 }
 
 hr{
     width: 70%;
     height: 0.3vw;
-    background-color: #eeeeee;
+    background-color: #171717;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.3;
@@ -499,6 +498,15 @@ p1{
 }
 
 /* PROJECTS */
+.project-intro{
+    text-align:center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #171717;
+    width:80%;
+    margin: 4vw auto;
+}
 .project-header{
     height: auto;
     width: 100%;
@@ -552,7 +560,7 @@ p1{
     height: auto;
     width: 100%;
     overflow: hidden;
-    padding:0;
+    padding:3vw 0;
 }
 
 .showcase-project img{
@@ -633,12 +641,12 @@ p1{
 .labeled{
     font-family: Lato, sans-serif;
     font-size: 1.2vw; 
-    color: #eeeeee;
+    color: #171717;
     text-align: center;
     padding-top: 1vw;
     padding-left: 4vw;
     padding-right: 4vw;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 /* hallmark */
@@ -670,11 +678,11 @@ p1{
 }
 
 .stepcinema{
-    color: #CCF939;
-    padding-bottom: 5px;
-    font-size: 2vw;
+    color: #B1E20F;
+    padding-bottom:1vw;
+    font-size: 3vw;
     font-weight: 600;
-    margin: 0 auto;
+    margin: 4vw auto;
     text-align: center;
     float: left;
     clear:both;
@@ -857,24 +865,8 @@ p1{
 
 }
 
-.cinema-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    clear: both;
-}
-
-.cinema-grid img {
-    margin: 10px;
-    max-width: 25vw;
-    clear: both;
-}
-
 .footer{
-    padding: 10vh 0;
+    padding:7vw 0;
     display: flex;
     margin: 0 auto;
     width: 80%;
@@ -884,10 +876,10 @@ p1{
 .footertext{
     display: flex;
     margin: auto 0;
-    color: white;
+    color: #171717;
     font-family: Lato, sans-serif;
     font-size: 1.5vw;
-    font-weight: 400;
+    font-weight: 600;
     opacity: 0.7;
     text-align: center;
     clear:both;
