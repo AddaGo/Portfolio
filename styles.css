@@ -731,6 +731,17 @@ p1{
     clear:both;
 }
 
+.stephiddem{
+    color: #405563;
+    padding-bottom:1vw;
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 4vw auto;
+    text-align: center;
+    float: left;
+    clear:both;
+}
+
 /* WORK */
 .project-flex{
     display:flex;
