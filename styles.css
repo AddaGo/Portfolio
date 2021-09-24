@@ -159,10 +159,75 @@ a.desc:hover{
     padding-right: 5vw;
 }
 
+.testimonial{
+    border-radius: 15px;
+    background-color: #121212;
+    margin:5vw auto;
+    width:80%;
+    height:auto;
+    min-height: 0;
+    min-width: 0; 
+}
+
+.logo-cell{
+    height: auto;
+    padding-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cell > img{
+    width: 8vw;
+    height: auto;
+}
+
+.quote-cell{
+    text-align: center;
+    padding-top: 4vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    color: #eeeeee;
+    line-height: 1.4;
+    font-family: Montserrat, sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-cell{
+    padding-top: 4vw;
+    color: #eeeeee;
+    line-height: 1.2;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-role{
+    padding-top: 0.4vw;
+    color: #757575;
+    text-align: left; 
+    font-family: Montserrat, sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
 .clients{
     display: flex;
     justify-content: space-evenly;
-    margin:5vw auto;
+    margin:7vw auto;
     width:80%;
     height:auto;
     min-height: 0;
@@ -171,14 +236,20 @@ a.desc:hover{
 
 .clients-cell{
     flex-basis:auto;
-    background-color:#121212;
-    padding: 2vw;
     border-radius: 1vw;
 }
 
 .clients-cell > img{
-    width:100%;
-    height:auto;
+    width:auto;
+    height:5vw;
+
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.clients-cell img:hover{
+    -webkit-filter: none;
+    filter: none;
 }
 
 p{
@@ -265,7 +336,7 @@ a.cat{
 
 .timeline{
     display:block;
-    padding: 10vw 0;
+    padding: 7vw 0;
 }
 
 .timeline img{
